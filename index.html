@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tenimon Privacy Policy</title>
+  <style>
+    :root { color-scheme: light dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.6; }
+    body { max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    h1 { line-height: 1.2; }
+    h2 { margin-top: 2rem; font-size: 1.15rem; }
+    p { margin: .6rem 0; }
+    .date { opacity: .75; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Tenimon Privacy Policy</h1>
+    <p class="date">Effective September 30, 2026</p>
+    <p>This policy explains how Tenimon handles information when you use the app.</p>
+
+    <h2>Data Collection</h2>
+    <p>Tenimon does not require an account. The developer does not collect, store, sell, or use your personal data for advertising, analytics, or tracking.</p>
+
+    <h2>Data Stored on Your Device</h2>
+    <p>Connection names, hostnames or IP addresses, ports, usernames, preferences, trusted SSH host keys, and voice endpoint settings are stored locally on your device. SSH passwords, private keys, and voice service API keys are stored in the iOS Keychain.</p>
+
+    <h2>Optional iCloud Sync</h2>
+    <p>When you enable sync, all server configurations, passwords, and SSH private keys are encrypted on your device and uploaded together to your private iCloud database. The encryption key syncs through iCloud Keychain. Sync is off by default. Turning it off keeps local and cloud data. Conflicting changes require you to choose which complete copy to keep. An encrypted local backup of the most recently overwritten data can be restored in Settings. Terminal content, running sessions, trusted SSH host keys, and voice settings and API keys do not sync.</p>
+
+    <h2>SSH and Mosh Connections</h2>
+    <p>Terminal input and output travel directly between your device and the SSH or Mosh server you choose. The Tenimon developer cannot access your connection details, credentials, commands, or terminal content.</p>
+
+    <h2>Voice Input</h2>
+    <p>Voice input is optional. Apple speech recognition uses on-device recognition by default; if you enable Apple online recognition, Apple may process your recording. With an OpenAI-compatible service, Tenimon sends your recording and API key directly to the HTTPS endpoint you select, which is OpenAI by default. That service handles the recording under its own privacy policy. Tenimon keeps a temporary recording on your device and normally deletes it after transcription or cancellation. You can review and edit the transcript before sending it to your connected server. The Tenimon developer does not receive your recordings, API keys, or transcripts.</p>
+
+    <h2>Local Network</h2>
+    <p>Tenimon requests local network access only when needed to connect to an SSH or Mosh server on your local network. Connection details are not sent to the Tenimon developer.</p>
+
+    <h2>Clipboard</h2>
+    <p>Tenimon reads the clipboard only when you explicitly choose to paste. Pasted content is sent to the server for the active connection.</p>
+
+    <h2>Deleting Data</h2>
+    <p>Deleting a connection removes its saved connection details and password. When sync is enabled, deletions also sync. The most recent overwrite backup may retain previous data until replaced. Trusted SSH host keys can be reviewed or removed separately in Settings under Trusted Hosts. You can remove a saved voice endpoint and its API key in Voice Settings.</p>
+
+    <h2>Servers and Services You Choose</h2>
+    <p>The operators of servers and voice services you choose may process data under their own privacy policies. Tenimon does not control those services.</p>
+
+    <h2>Contact</h2>
+    <p>For privacy questions, contact <a href="mailto:ggdabin@gmail.com">ggdabin@gmail.com</a>.</p>
+  </main>
+</body>
+</html>
